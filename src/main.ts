@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-12 15:49:01
- * @LastEditTime: 2021-07-12 18:11:32
+ * @LastEditTime: 2021-07-13 18:51:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vite_system\src\main.ts
@@ -13,11 +13,12 @@ import router from "./router"
 import store from "./store"
 import SvgIcon from "./plugin/SvgIcon"
 import VueHighCharts from "./plugin/VueHighCharts"
+import "ant-design-vue/dist/antd.css";
 router.beforeEach((to, from, next) => {
     if(to.path==="/login"){
         next()
     }else{
-        if(store.getters["GET_ISLOGIN"]){
+        if(store.getters["public/GET_USER"]){
             next()
         }else{
             next("/login")

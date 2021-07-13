@@ -1,19 +1,17 @@
 /*
  * @Author: your name
- * @Date: 2021-07-12 15:49:01
- * @LastEditTime: 2021-07-13 10:01:06
+ * @Date: 2021-07-13 09:27:00
+ * @LastEditTime: 2021-07-13 09:38:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \vite_system\src\App.tsx
+ * @FilePath: \vite_system\src\pages\dashboard\Analysis.tsx
  */
 import {defineComponent} from "vue";
-import {RouterView} from 'vue-router';
-import "./App.less"
 export default defineComponent({
-    name:"App",
+    name:"Analysis",
     setup(){
         return ()=>(
-            <RouterView/>
+            <div class="analysis">Analysis</div>
         )
-    }
+    },
 })

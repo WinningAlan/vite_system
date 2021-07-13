@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-12 15:49:02
- * @LastEditTime: 2021-07-12 17:13:08
+ * @LastEditTime: 2021-07-13 09:20:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vite_system\vite.config.ts
@@ -22,14 +22,14 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    viteImp({
-    libList:[
-      {
-        libName:"ant-design-vue",
-        style:(name)=>`ant-design-vue/es/${name}/style/index.css`
-      }
-    ]
-  }),
+  //   viteImp({
+  //   libList:[
+  //     {
+  //       libName:"ant-design-vue",
+  //       style:(name)=>`ant-design-vue/es/${name}/style/index.css`
+  //     }
+  //   ]
+  // }),
   svgIcon({
     iconDirs:[resolve(process.cwd(),"./src/icons")],
     symbolId:"icon-[dir]-[name]",

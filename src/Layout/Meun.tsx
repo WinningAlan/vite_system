@@ -1,17 +1,17 @@
 /*
  * @Author: your name
- * @Date: 2021-07-12 17:04:50
- * @LastEditTime: 2021-07-12 17:05:35
+ * @Date: 2021-07-13 10:33:40
+ * @LastEditTime: 2021-07-13 10:35:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \vite_system\src\pages\Login.tsx
+ * @FilePath: \vite_system\src\Layout\Meun.tsx
  */
 import {defineComponent} from "vue";
 export default defineComponent({
-    name:"Login",
+    name:"Meun",
     setup(){
         return ()=>(
-            <div class="Login">Login</div>
+            <div class="box">Menu</div>
         )
-    },
+    }
 })
